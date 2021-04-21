@@ -6,5 +6,6 @@ import java.io.File
  *  takeUnless 与 takeif相反
  * */
 fun main() {
+    //{it.canRead() && it.canWrite()} lambda表达式返回true，takeIf就返回File对象，否则返回null
     File("E://aa.txt").takeIf {it.canRead() && it.canWrite()} ?.readText()
 }
