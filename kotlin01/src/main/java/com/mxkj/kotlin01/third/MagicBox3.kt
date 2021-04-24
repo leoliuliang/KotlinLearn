@@ -35,7 +35,7 @@ fun main(){
 
     //此处业务场景是：将男孩变男人
     boy.fetch(2) {
-        Man(it.name,it.age.plus(20))
+        Man3(it.name,it.age.plus(20))
     }
 
     //boy[2] 要想这样用必须运算符重载，就是去实现get()函数
